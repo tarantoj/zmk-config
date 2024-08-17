@@ -14,6 +14,8 @@
     quick-tap-ms = <175>;
 };
 
+&lt { quick-tap-ms = <175>; };
+
 / {
     keymap {
         compatible = "zmk,keymap";
