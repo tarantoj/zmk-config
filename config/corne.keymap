@@ -17,6 +17,8 @@
 
 &lt { quick-tap-ms = <175>; };
 
+&sk { quick-release; };
+
 / {
     behaviors {
         smart_shift: smart_shift {
