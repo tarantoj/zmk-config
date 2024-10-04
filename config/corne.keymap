@@ -29,6 +29,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        toggle_gaming {
+            bindings = <&tog 5>;
+            key-positions = <37 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -92,6 +101,15 @@
 &kp GRAVE  &kp AT_SIGN      &kp HASH       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp LEFT          &kp DOWN       &kp UP_ARROW  &kp RIGHT          &kp K_APPLICATION  &trans
 &trans     &kp DOLLAR       &kp PERCENT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET        &kp C_PLAY_PAUSE  &kp C_PREV     &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans
                                            &kp LESS_THAN         &kp GREATER_THAN       &trans           &trans            &trans         &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp TAB           &kp T  &kp Q  &kp W         &kp E   &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp G  &kp A  &kp S         &kp D   &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp B  &kp X  &kp C         &kp V   &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp LEFT_ALT  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
