@@ -36,6 +36,7 @@
 
         board = "nice_nano_v2";
         shield = "corne_%PART%";
+        enableZmkStudio = true;
 
         zephyrDepsHash = "sha256-f/ypTyj/53VDI9ECWtU2s6XeZFtOqVSgLSVHXYt82IM=";
 
