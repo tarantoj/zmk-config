@@ -32,11 +32,25 @@
       firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
         name = "firmware";
 
-        src = nixpkgs.lib.sourceFilesBySuffices self [".conf" ".keymap" ".dtsi" ".yml" ".shield" ".overlay" ".defconfig"];
+        src = nixpkgs.lib.sourceFilesBySuffices self [
+          ".board"
+          ".cmake"
+          ".conf"
+          ".defconfig"
+          ".dts"
+          ".dtsi"
+          ".json"
+          ".keymap"
+          ".overlay"
+          ".shield"
+          ".yml"
+          "_defconfig"
+        ];
 
         board = "nice_nano_v2";
         shield = "corne_%PART%";
-        # enableZmkStudio = true;
+        enableZmkStudio = true;
+        extraCmakeFlags = ["-DCONFIG_ZMK_STUDIO=y"];
 
         zephyrDepsHash = "sha256-xFZ+PEryjJz8if2PMiO0jDr66FXoTH+fADTlobt/HwM=";
 
