@@ -14,7 +14,7 @@ manifest:
           # - hal_rpi_pico
           # - hal_stm32
           - mbedtls
-          # - tinycrypt
+          - tinycrypt
 
     # - name: zephyr
     #   remote: zmkfirmware
