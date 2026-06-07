@@ -38,7 +38,7 @@
         shield = "corne_%PART%";
         enableZmkStudio = true;
 
-        zephyrDepsHash = "sha256-6aOOGMMeExWXPvcrKdb7hEZTS/X0ZmFTwTOSXRjdT7w=";
+        zephyrDepsHash = "sha256-gsqiTDJLAihVyBXVFlgXwqRmlREcFJctKpl4tEWmVlY=";
 
         meta = {
           description = "ZMK firmware";
